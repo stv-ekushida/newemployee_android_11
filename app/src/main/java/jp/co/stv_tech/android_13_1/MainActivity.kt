@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         val cityList: MutableList<MutableMap<String, String>> = mutableListOf()
 
-        var city = mutableMapOf<String, String>("name" to "大阪", "id" to "27000")
+        var city = mutableMapOf<String, String>("name" to "大阪", "id" to "270000")
         cityList.add(city)
 
         city = mutableMapOf<String, String>("name" to "神戸", "id" to "280010")
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
             //WeaterInfoReceiverを実行
             val reviever = WeaterInfoReceiver()
-            reviever.execute()
+            reviever.execute(cityId)
         }
     }
 
