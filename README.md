@@ -61,6 +61,13 @@ private inner class WeaterInfoReceiver() : AsyncTask<String, String, String>() {
     }
  ```
  
+ ### 使い方
+ 
+ ```
+ val reviever = WeaterInfoReceiver()
+ reviever.execute(cityId)
+ ```
+ 
  ### 関連メソッド
  
  | メソッド名　| 説明 |
